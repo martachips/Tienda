@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Anek+Telugu:wght@400;500&family=Arimo&family=Handjet:wght@100&family=Kenia&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;400&family=Anek+Telugu:wght@400;500&family=Arimo&family=Handjet:wght@100&family=Jaldi&family=Kenia&family=Roboto+Condensed&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+/*Colors*/
+  --rtc-color-background:  rgb(65, 64, 64);
+  --rtc-color-background1: rgb(40, 33, 33);
+  --rtc-color-background2: rgba(100, 99, 99, 0.994);
+  --rtc-color-background3: rgb(49, 45, 45);
+  --rtc-color-text1:  ghostwhite;
+/*Spacing*/
+  --rtc-border-radius-s: 4px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100svh;
+  background-color: var(--rtc-color-background);
+  color: var(--rtc-color-text1);
+  font-family: 'Jaldi', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+/*HEADER ---------------*/
+header {
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 100;
+  text-align: right;
+  margin: 0;
+  background: rgba(100, 99, 99, 0.994);
+}
+
+.nav-bar-container {
+  background: rgb(49, 45, 45);
+}
+
+.nav-bar {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  column-gap: 10px;
+  flex-wrap: nowrap;
+}
+
+#products,
+#log-in,
+#contact {
+  padding: 10px;
+}
+
+#products p,
+#log-in p,
+#contact p {
+  margin: 0;
+  font-size: 18px;
+}
+
+#products li a:hover {
+  background: rgba(245, 245, 245, 0.162);
+}
+
+.ul-products {
+  display: none;
+  position: absolute;
+  left: 100;
+}
+
+#products:hover .ul-products {
+  display: block;
+}
+
+.ul-products li {
+  color: aquamarine;
+  background: rgba(0, 0, 0, 0.58);
+  padding: 5px;
+}
+
+/*MAIN ---------------*/
+#app {
+  display: flex;
+  
+  width: 95%;
+  background-color: var(--rtc-color-background3);
+  margin: auto;
+}
+
+#filter {
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ justify-content: center;
+ background-color: var(--rtc-color-background1);
+ width: 150px;
+ margin: 30px;
+ padding: 30px;
+ height: 180px;
+ border-radius: var(--rtc-border-radius-s);
+}
+
+#product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+article {
+  margin: 0 auto;
+  box-shadow: 1px 1px 8px 0.5px rgba(0, 0, 0, 0.58);
+  border-radius: var(--rtc-border-radius-s);
+  width: 320px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rtc-color-background);
+}
+
+ article img {
+  width: 200px;
+  border-radius: 4px;
+ }
+
+ article ul > li > img {
+  width: 20px;
+ }
+
+ article ul > li:first-child::after{
+  content: "€";
+  padding-right: 10px;
+ }
+
+ article ul {
+  display: flex;
+  align-self: flex-end;
+  padding-right: 10px;
+ }
+
+article h3 {
+  height: 50px;
+  margin: 10px;
+  font-size: 1.2em;
+  text-align: center;
+}
+ .description {
+  display: flex;
+  padding: 5px;
+  text-align: justify;
+  min-height: 140px;
+  width: 90%;
+  align-items: center;
+ }
+.seller {
+  margin-left: 10px;
+  align-self: flex-start;
+}
+/* main {
+  height: 100%;
+  padding-bottom: 10rem;
+} */
+
+/* .section-container div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.art img {
+  width: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.art p {
+  text-align: center;
+  margin: 2px;
+} */
+
+/*FOOTER -------------*/
+footer {
+  text-align: center;
+  background: rgba(245, 245, 245, 0.162);
+  width: 100%;
+  bottom: 0;
+  position: relative;
+  max-height: 8rem;
+  z-index: 1;
+}
+
+.div-lists {
+  width: 90%;
+  margin: auto;
+  font-size: 14px;
+}
+.div-lists .first-ul {
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+footer p {
+  border-top: 1px solid rgba(245, 245, 245, 0.23);
+  font-size: 13px;
+  margin: 4px;
+}
+
+.first-li {
+  margin: 0 10px;
+}
+
+.second-li {
+  padding: 0;
+}
