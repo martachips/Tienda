@@ -38,7 +38,7 @@ const printProducts = () => {
     descriptionProduct.textContent = product.description;
     sellerProduct.textContent = product.seller;
     liPrice.textContent = product.price;
-    liStarImg.src = "src/images/star-svgrepo-com(1).svg";
+    liStarImg.src = ".src/images/star-svgrepo-com(1).svg";
     liNumber.textContent = product.stars;
 
     sectionProd.appendChild(articleProduct);
