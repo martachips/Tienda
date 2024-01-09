@@ -124,19 +124,11 @@ h1 {
   gap: 20px;
   justify-content: center;
   background-color: var(--rtc-color-background1);
-  width: 67%;
+  width: 170px;
   margin: 30px;
   padding: 30px;
   height: 180px;
   border-radius: var(--rtc-border-radius-s);
-}
-
-#filter > .selectFilter,
-#filter > .inputNum,
-#filter > button {
-  width: 150px;
-  margin: 0 auto;
-  justify-content: center;
 }
 
 #product-container {
@@ -245,7 +237,15 @@ footer p {
   }
   #filter {
     margin: 10px auto;
+    width: 67%;
     padding: 10px;
+  }
+  #filter > .selectFilter,
+  #filter > .inputNum,
+  #filter > button {
+    width: 120px;
+    margin: 0 auto;
+    justify-content: center;
   }
   header a > img {
     max-width: 300px;
