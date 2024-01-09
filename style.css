@@ -189,6 +189,11 @@ article h3 {
   align-self: flex-start;
 }
 
+.noProducts {
+  display: flex;
+  align-items: center;
+}
+
 /*FOOTER -------------*/
 footer {
   text-align: center;

@@ -18,6 +18,13 @@ const printProducts = () => {
     .filter(
       (product) => sellerFilter === product.seller || sellerFilter === ''
     );
+  if (filteredProducts.length === 0) {
+    const noProductsMessage = document.createElement('p');
+    noProductsMessage.classList.add('noProducts');
+    noProductsMessage.textContent = 'No products found';
+    sectionProd.appendChild(noProductsMessage);
+    return;
+  }
 
   for (const product of filteredProducts) {
     const articleProduct = document.createElement('article');
