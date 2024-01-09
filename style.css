@@ -226,7 +226,7 @@ footer p {
   padding: 0;
 }
 
-@media (max-width: 595px) {
+@media (max-width: 600px) {
   #app {
     flex-direction: column;
   }
